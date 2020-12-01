@@ -1,0 +1,138 @@
+/* ============== Normalisasi HTML ============== */
+*,
+::after,
+::before {
+   box-sizing: border-box;
+}
+
+html {
+   line-height: 1.15;
+   -webkit-text-size-adjust: 100%;
+   -webkit-tap-highlight-color: transparent;
+}
+
+
+/* ============== Primary Set Up ============== */
+
+/* Global set up untuk warna background dan properti font  */
+body {
+   margin: 0;
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5;
+   color: #212529;
+   text-align: left;
+   background-color: #FAFCFD;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Container mengatur layar agar dalam bentuk layout flex  */
+.container {
+   display: flex;
+   height: 100vh;
+}
+
+.sign-up-section {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.sign-up-section .form-wrapper {
+   height: 500px;
+   width: 422px;
+}
+
+.sign-up-section .form-wrapper .form-title {
+   margin-bottom: 40px;
+}
+
+.sign-up-section .form-wrapper .form-title .main-title {
+   margin: 0;
+   margin-bottom: 6px;
+}
+
+.sign-up-section .form-wrapper .form-title .sub-title {
+   font-size: 16px;
+   color: #00000099;
+}
+
+.sign-up-section .form-wrapper .input-section {
+   margin-bottom: 30px;
+}
+
+.sign-up-section .form-wrapper .box-input {
+   margin-bottom: 20px;
+}
+
+.sign-up-section .form-wrapper .box-input input {
+   height: 56px;
+   width: 100%;
+   border-radius: 4px;
+   border: 1px solid #00000059;
+   background-color: #FAFCFD;
+   font-size: 16px;
+   padding: 0 16px;
+}
+
+.btn-primary {
+   width: 100%;
+   height: 56px;
+   border: none;
+   border-radius: 4px;
+   background-color: #6200EE;
+   color: white;
+   font-size: 14px;
+   letter-spacing: 1.25px;
+   transition: all linear 0.2s;
+   cursor: pointer;
+   box-shadow: 0px 3px 8px 2px #2121214f;
+}
+
+.btn-primary:hover {
+   background-color: #4500a7;
+   transition: all linear 0.2s;
+}
+
+.image-section {
+   width: 1100px;
+   height: 100vh;
+   background-color: red;
+}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 992px) {
+   .sign-up-section {
+      position: absolute;
+      height: 100%;
+   }
+
+   .sign-up-section .form-wrapper {
+      height: auto;
+   }
+
+   .sign-up-section .form-wrapper .form-responsive-handler {
+      background-color: #FAFCFD;
+      height: 100%;
+      padding: 10px 25px 25px;
+      margin: 0 25px;
+      border-radius: 4px;
+      box-shadow: 0px 5px 14px 6px #21212163;
+   }
+
+   .sign-up-section .form-wrapper .form-title {
+      margin-top: 10px;
+   }
+
+   .image-section {
+      width: 100%;
+      max-width: none;
+      min-width: 0px;
+   }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {}
