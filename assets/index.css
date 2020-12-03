@@ -152,6 +152,8 @@ enak dilihat. */
 /* =============== Responsive =============== */
 /* ========================================== */
 
+/* Layar akan menyesuaikan dengan tampilan mobile jika panjang
+layar kurang dari 992px. */
 @media screen and (max-width: 992px) {
 
    /* ========================================== */
